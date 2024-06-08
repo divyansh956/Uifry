@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const MainNav = () => {
   const path = usePathname();
   return (
-    <div className="flex items-center justify-between pt-5">
+    <div className="flex items-center justify-between">
       <div className="inline-flex">
         <Image
           src="/logo.png"

@@ -6,26 +6,3 @@ body {
   font-family: "Clash Display", sans-serif;
   text-transform: capitalize;
 }
-
-.blurred-gradient-red {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, red, red);
-  filter: blur(50px);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-.blurred-gradient-yellow {
-  position: absolute;
-  bottom: -20px; /* Adjust as needed to position the yellow blur correctly */
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, yellow, yellow);
-  filter: blur(50px);
-  border-radius: 50%;
-  z-index: 1;
-}

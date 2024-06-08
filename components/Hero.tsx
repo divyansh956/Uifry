@@ -7,8 +7,11 @@ import Gradient from "./Gradient";
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row mt-10">
-      <div className="md:w-1/2 flex flex-col">
-        <Heading title="make the best financial decisions" />
+      <div className="md:w-1/2 flex flex-col mt-20">
+        <Heading
+          title="make the best financial decisions"
+          className="text-6xl"
+        />
         <p className="py-6">
           Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
           faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
@@ -23,8 +26,8 @@ const Hero = () => {
         </div>
         <Image src="/advertise.svg" alt="hero" height={450} width={450} />
       </div>
+      <Gradient className="translate-x-36 -translate-y-16" />
       <div className="md:w-1/2 flex flex-col relative items-center ">
-        <Gradient />
         <Image src="/circle.svg" alt="circle" fill className="-z-30 absolute" />
         <Image src="/herophone1.svg" alt="phone" fill className="absolute" />
         <Image

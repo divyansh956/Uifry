@@ -5,7 +5,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <>
-      <div className="md:hidden pt-5 flex justify-between">
+      <div className="md:hidden flex justify-between">
         <Image src="/logo.png" alt="logo" height={117} width={117} />
         <MobileNav />
       </div>
