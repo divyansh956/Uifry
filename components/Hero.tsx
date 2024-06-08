@@ -2,12 +2,11 @@ import Image from "next/image";
 import Heading from "./Heading";
 import { Button } from "./ui/button";
 import { CirclePlay, MoveRight } from "lucide-react";
-import Gradient from "./Gradient";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-10">
-      <div className="md:w-1/2 flex flex-col mt-20">
+    <div className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 flex flex-col mt-8 md:mt-20">
         <Heading
           title="make the best financial decisions"
           className="text-6xl"
@@ -26,8 +25,7 @@ const Hero = () => {
         </div>
         <Image src="/advertise.svg" alt="hero" height={450} width={450} />
       </div>
-      <Gradient className="translate-x-36 -translate-y-16" />
-      <div className="md:w-1/2 flex flex-col relative items-center ">
+      <div className="md:w-1/2 flex flex-col relative items-center overflow-hidden">
         <Image src="/circle.svg" alt="circle" fill className="-z-30 absolute" />
         <Image src="/herophone1.svg" alt="phone" fill className="absolute" />
         <Image

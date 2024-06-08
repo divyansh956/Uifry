@@ -5,4 +5,6 @@
 body {
   font-family: "Clash Display", sans-serif;
   text-transform: capitalize;
+  @apply tracking-wide;
+  margin-top: 20px;
 }

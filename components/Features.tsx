@@ -5,8 +5,8 @@ import { features } from "@/constants/data";
 
 const Features = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-10">
-      <div className="md:w-1/2 hidden md:flex flex-col relative items-center">
+    <div className="flex flex-col md:flex-row my-10 w-[90%]">
+      <div className="md:w-1/2 hidden md:flex flex-col items-center">
         <Image
           src="/circle.svg"
           alt="circle"
@@ -42,7 +42,6 @@ const Features = () => {
             </div>
           ))}
         </div>
-        <Gradient className="translate-x-[500px]" />
       </div>
     </div>
   );
