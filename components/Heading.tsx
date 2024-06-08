@@ -6,7 +6,7 @@ type props = {
 };
 
 const Heading = ({ title, className }: props) => {
-  return <h1 className={cn("font-bold", className)}>{title}</h1>;
+  return <div className={cn("font-bold", className)}>{title}</div>;
 };
 
 export default Heading;
