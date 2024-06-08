@@ -1,9 +1,8 @@
+"use client";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navLinks } from "@/constants/data";
@@ -11,8 +10,11 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const MobileNav = () => {
+  const path = usePathname();
   return (
     <Sheet>
       <SheetTrigger>
@@ -20,7 +22,13 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent>
         {navLinks.map((link) => (
-          <SheetDescription key={link.link} className="text-lg">
+          <SheetDescription
+            key={link.link}
+            className={cn(
+              link.link === path && "text-[#FF5555] font-bold",
+              "text-lg"
+            )}
+          >
             <Link href={link.link}>{link.name}</Link>
           </SheetDescription>
         ))}
