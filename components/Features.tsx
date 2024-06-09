@@ -8,6 +8,13 @@ const Features = () => {
     <div className="flex flex-col md:flex-row my-10 w-[90%]">
       <div className="md:w-1/2 hidden md:flex flex-col items-center">
         <Image
+          src="/star.svg"
+          alt="blob"
+          height={50}
+          width={50}
+          className="-z-40 hidden md:block absolute left-20"
+        />
+        <Image
           src="/circle.svg"
           alt="circle"
           height={400}

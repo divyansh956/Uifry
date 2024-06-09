@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Heading from "./Heading";
+import Gradient from "./Gradient";
 
 const Advantages = () => {
   return (
@@ -21,6 +22,7 @@ const Advantages = () => {
           </p>
         </div>
         <div className="md:w-1/2 hidden md:flex flex-col items-center">
+          <Gradient />
           <Image
             src="/advantages.svg"
             alt="circle"
@@ -34,6 +36,13 @@ const Advantages = () => {
             height={200}
             width={200}
             className="-z-20 absolute translate-x-11 translate-y-52"
+          />
+          <Image
+            src="/star.svg"
+            alt="blob"
+            height={50}
+            width={50}
+            className="-z-40 hidden md:block absolute right-20"
           />
         </div>
       </div>
@@ -50,8 +59,23 @@ const Advantages = () => {
             sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien,
             suspendisse aliquam.
           </p>
+          <Image
+            src="/star.svg"
+            alt="blob"
+            height={50}
+            width={50}
+            className="-z-40 hidden md:block absolute right-20"
+          />
         </div>
         <div className="md:w-1/2 hidden md:flex flex-col relative items-center">
+          <Image
+            src="/star.svg"
+            alt="blob"
+            height={50}
+            width={50}
+            className="-z-40 hidden md:block absolute left-20"
+          />
+          <Gradient />
           <Image
             src="/advantages2.svg"
             alt="circle"

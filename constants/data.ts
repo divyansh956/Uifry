@@ -70,3 +70,70 @@ export const FAQData = [
       "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Links",
+    links: [
+      {
+        name: "Home",
+        link: "/",
+      },
+      {
+        name: "About Us",
+        link: "/about",
+      },
+      {
+        name: "Bookings",
+        link: "/bookings",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      {
+        name: "Terms of Use",
+        link: "/terms",
+      },
+      {
+        name: "Privacy Policy",
+        link: "/privacy",
+      },
+      {
+        name: "Cookie Policy",
+        link: "/cookie",
+      },
+    ],
+  },
+  {
+    title: "Product",
+    links: [
+      {
+        name: "Take Tour",
+        link: "/tour",
+      },
+      {
+        name: "Live Chat",
+        link: "/chat",
+      },
+      {
+        name: "Relative",
+        link: "/relative",
+      },
+    ],
+  },
+  {
+    title: "Newsletter",
+    links: [
+      {
+        name: "Sign up to date",
+        link: "/signup",
+      },
+    ],
+  },
+];

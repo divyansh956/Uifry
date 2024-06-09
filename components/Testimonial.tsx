@@ -1,3 +1,4 @@
+import Gradient from "./Gradient";
 import Heading from "./Heading";
 import Image from "next/image";
 
@@ -5,6 +6,13 @@ const Testimonial = () => {
   return (
     <div className="md:mx-32">
       <div className="mx-auto flex flex-col items-center">
+        <Image
+          src="/star.svg"
+          alt="blob"
+          height={50}
+          width={50}
+          className="-z-40 hidden md:block absolute right-80 -mt-20"
+        />
         <h1 className="uppercase">Testimonial</h1>
         <Heading
           title="what our users say about us?"
@@ -12,6 +20,7 @@ const Testimonial = () => {
         />
       </div>
       <div className="flex flex-col md:flex-row">
+        <Gradient className="hidden md:block" />
         <Image src="/test.svg" height={500} width={500} alt="image" />
         <div className="flex flex-col justify-center mt-6 w-full md:w-1/2 md:max-w-[40%] md:ml-10 space-y-4">
           <p className="font-semibold text-2xl">

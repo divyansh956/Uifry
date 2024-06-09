@@ -1,6 +1,7 @@
 import { FAQData } from "@/constants/data";
 import Heading from "./Heading";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const FAQ = () => {
   return (
@@ -9,6 +10,13 @@ const FAQ = () => {
       <Heading
         title="Frequently asked questions?"
         className="text-4xl md:max-w-[40%]"
+      />
+      <Image
+        src="/star.svg"
+        alt="blob"
+        height={50}
+        width={50}
+        className="-z-40 hidden md:block absolute right-96 -mt-20"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
         {FAQData.map((data, index) => (
