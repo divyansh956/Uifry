@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) + [Typescript](https://www.typescriptlang.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+#### UI Library: [Shadcn](https://ui.shadcn.com/) + [Tailwind CSS](https://tailwindcss.com/)
+
+### Figma: [Link](<https://www.figma.com/design/3dU4gPT6YI4ZM7E5A9suye/App-Landing-Page-Finance-Bank-Money-(Community)?node-id=101-79&t=znHEpFOOcapEMjiN-0>)
 
 ## Getting Started
 
