@@ -37,3 +37,36 @@ export const features = [
     image: "/f3.svg",
   },
 ];
+
+export const FAQData = [
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+  {
+    question: "the best financial accounting app ever!",
+    answer:
+      "'Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+  },
+];

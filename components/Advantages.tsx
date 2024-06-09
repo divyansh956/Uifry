@@ -5,7 +5,7 @@ const Advantages = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row md:px-32 md:pt-20">
-        <div className="md:w-1/2 flex flex-col ml-6 mt-10 justify-center">
+        <div className="md:w-1/2 flex flex-col md:ml-6 mt-10 justify-center">
           <h1 className="text-[#FF5555] uppercase">Advantages</h1>
           <Heading title="why choose Uifry?" className="text-4xl" />
           <div className="flex items-center mt-6">
@@ -38,7 +38,7 @@ const Advantages = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse md:-mt-10 lg:-mt-16">
-        <div className="md:w-1/2 flex flex-col ml-6 mt-10">
+        <div className="md:w-1/2 flex flex-col md:ml-6 mt-10">
           <div className="flex items-center md:mt-32">
             <Image src="/notification.svg" height={30} width={30} alt="image" />
             <p className="font-bold ml-3">fully customizable</p>
