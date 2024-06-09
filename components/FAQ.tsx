@@ -2,6 +2,8 @@ import { FAQData } from "@/constants/data";
 import Heading from "./Heading";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { staggerContainer, zoomIn } from "@/constants/motion";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   return (
@@ -18,9 +20,16 @@ const FAQ = () => {
         width={50}
         className="-z-40 hidden md:block absolute right-96 -mt-20"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-4">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 1 }}
+        className="grid grid-cols-1 md:grid-cols-2 mt-4"
+      >
         {FAQData.map((data, index) => (
-          <div
+          <motion.div
+            variants={zoomIn(0.4, 1)}
             key={index}
             className={cn(
               "md:m-2 p-4 rounded-md",
@@ -32,9 +41,9 @@ const FAQ = () => {
           >
             <h1 className="text-3xl font-medium">{data.question}</h1>
             <p>{data.answer}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

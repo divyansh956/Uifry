@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
 import MainNav from "./MainNav";
 import MobileNav from "./MobileNav";
 import Image from "next/image";
+import { navbarVariants } from "@/constants/motion";
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <Image
         src="/star.svg"
         alt="blob"
@@ -16,9 +18,14 @@ const Navbar = () => {
         <Image src="/logo.png" alt="logo" height={117} width={117} />
         <MobileNav />
       </div>
-      <div className="hidden md:block">
+      <motion.div
+        variants={navbarVariants}
+        initial="hidden"
+        whileInView="show"
+        className="hidden md:block"
+      >
         <MainNav />
-      </div>
+      </motion.div>
       <Image
         src="/star.svg"
         alt="blob"
@@ -26,7 +33,7 @@ const Navbar = () => {
         width={50}
         className="absolute z-40 right-10"
       />
-    </>
+    </div>
   );
 };
 

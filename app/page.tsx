@@ -1,3 +1,4 @@
+"use client";
 import Advantages from "@/components/Advantages";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";

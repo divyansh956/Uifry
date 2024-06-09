@@ -3,10 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
+import { footerVariants } from "@/constants/motion";
 
 const Footer = () => {
   return (
-    <>
+    <motion.div variants={footerVariants} initial="hidden" whileInView="show">
       <div className="grid grid-cols-2 md:grid-cols-5 md:mx-32 pb-10 space-y-4 md:space-y-0">
         <div>
           <Image
@@ -56,7 +58,7 @@ const Footer = () => {
           Copyright 2022 uifry.com all rights reserved
         </p>
       </div>
-    </>
+    </motion.div>
   );
 };
 

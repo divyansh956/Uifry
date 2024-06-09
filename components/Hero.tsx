@@ -7,11 +7,6 @@ import Gradient from "./Gradient";
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <span className="ellipse-container">
-        <span className="ellipse"></span>
-        <span className="ellipse"></span>
-        <span className="ellipse"></span>
-      </span>
       <div className="md:w-1/2 flex flex-col mt-8 md:mt-20">
         <Gradient className="hidden md:block translate-x-24 -translate-y-36" />
         <Heading
