@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { staggerContainer, zoomIn } from "@/constants/motion";
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
 const FAQ = () => {
   return (
@@ -21,6 +21,7 @@ const FAQ = () => {
         className="-z-40 hidden md:block absolute right-96 -mt-20"
       />
       <motion.div
+        // @ts-ignore
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"

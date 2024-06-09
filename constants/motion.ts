@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 export const navbarVariants = {
   hidden: {
     opacity: 0,
@@ -18,7 +20,10 @@ export const navbarVariants = {
   },
 };
 
-export const staggerContainer = (staggerChildren, delayChildren) => ({
+export const staggerContainer = (
+  staggerChildren: Variants,
+  delayChildren: Variants
+) => ({
   hidden: {},
   show: {
     transition: {
