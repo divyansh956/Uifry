@@ -6,6 +6,11 @@ import { CirclePlay, MoveRight } from "lucide-react";
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row">
+      <span className="ellipse-container">
+        <span className="ellipse"></span>
+        <span className="ellipse"></span>
+        <span className="ellipse"></span>
+      </span>
       <div className="md:w-1/2 flex flex-col mt-8 md:mt-20">
         <Heading
           title="make the best financial decisions"

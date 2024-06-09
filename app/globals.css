@@ -8,3 +8,12 @@ body {
   @apply tracking-wide;
   margin-top: 20px;
 }
+
+.gradient {
+  background: rgb(253, 229, 152);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 229, 152, 1) 0%,
+    rgba(255, 85, 85, 1) 43%
+  );
+}
